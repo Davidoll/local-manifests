@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
  <!--Remote-->
+ <remote name="nanhumly" fetch="https://github.com/Nanhumly-Staging" />
  <remote name="sagit" fetch="https://github.com/sagit-risingos" />
  <remote name="linlinger" fetch="https://github.com/Davidoll" />
  <remote name="rising-devices" fetch="https://github.com/RisingOS-Revived-devices/" />
- 
+
 <!-- Hardwre xiaomi -->
-<project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="rising-devices" revision="sixteen" />
+<project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="rising-devices" revision="sixteen" /> 
 
  <!-- sagit Tree -->
-<project path="device/xiaomi/msm8998-common" name="android_device_xiaomi_msm8998-common" remote="sagit" revision="lineage-23.0" />
+<project path="device/xiaomi/msm8998-common" name="android_device_xiaomi_msm8998-common" remote="linlinger" revision="rising-16" />
 <project path="device/xiaomi/sagit" name="android_device_xiaomi_sagit" remote="linlinger" revision="Avium16" />
-<project path="kernel/xiaomi/msm8998" name="android_kernel_xiaomi_msm8998" remote="sagit" revision="16-sukisu" />
-<project path="vendor/xiaomi/sagit" name="proprietary_vendor_xiaomi_sagit" remote="sagit" revision="lineage-23.0"/>
-<project path="vendor/xiaomi/msm8998-common" name="proprietary_vendor_xiaomi_msm8998-common" remote="linlinger" revision="lineage-23.0"/>
- 
+<project path="kernel/xiaomi/msm8998" name="android_kernel_xiaomi_msm8998" remote="linlinger" revision="16-sukisu" />
+<project path="vendor/xiaomi/sagit" name="proprietary_vendor_xiaomi_sagit" remote="nanhumly" revision="lineage-23.0"/>
+<project path="vendor/xiaomi/msm8998-common" name="proprietary_vendor_xiaomi_msm8998-common" remote="nanhumly" revision="lineage-23.2"/>
+
  <!-- chiron Tree -->
  <!-- To be continued -->
  </manifest>
